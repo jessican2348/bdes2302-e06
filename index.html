@@ -10,40 +10,55 @@
 
 <body>
 
+    <div class="max-w-3xl mx-auto py-5 flex">
 
-    <div class="max-w-3xl mx-auto py-5">
+        <div class="flex-1">
 
-        <h1 class="text-xl font-bold mb-3">Has either of your parents/guardians ever attended a university or college?
+       
+
+        <h1 class="text-xl font-bold mb-3">
+            Has either of your parents/guardians ever attended university or college?
         </h1>
-        <div class="w-[50%] mx-auto mb-3">
+        <div class="w-[50%] mx-auto">
             <canvas id="myChart"></canvas>
         </div>
 
+        <div class="max-w-3xl mx-auto py-5">
+            <h1 class="text-xl font-bold mb-3">
+                Revenue and expenses 2023, 2025 </h1>
+            <div class=" mx-auto">
+                <canvas id="chart_business"></canvas>
+            </div>
 
+            <h1 class="text-xl font-bold mb-3">
+                Domestic Enrollment Comparison </h1>
+            <div class=" mx-auto">
+                <canvas id="chart_count"></canvas>
+            </div>
+         </div>
 
-        <h1 class="text-xl font-bold mb-3"> Revenue and Expenses, 2023-2025
+        </div>  
+
+        <div class="flex-1 text-center">
+             <h1 class="text-xl font-bold mb-3 text-center">
+                Canada's exports ($B/yr)
         </h1>
-        <div class="mx-auto">
-            <canvas id="chart_buisness"></canvas>
-        </div>
 
-        <h1 class="text-xl font-bold mb-3"> Domestic Enrollment Comparison
-        </h1>
-        <div class="mx-auto">
-            <canvas id="chart_count"></canvas>
-        </div>
+        <main class="text-center flex justify-center"></main>
 
+        </div>
+        
+        
     </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script src="script.js"></script>
-
-
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@2.3.4/lib/p5.min.js"></script>
+        <script src="script.js"></script>
+        <script src="viz.js"></script>
 </body>
 
 </html>
+
